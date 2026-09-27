@@ -16,25 +16,25 @@ L.DEBUG_DISABLED =                       "Режим отладки выключ
 L.INVALID_COMMAND =                      "Неверная команда"
 
 -- Settings
-L.SETTINGS_VERSION =                     GAME_VERSION_LABEL .. ":" -- "Version"
-L.SETTINGS_SUPPORT_TEXTLONG1 =           "Разработка этого аддона требует значительного времени и усилий."
-L.SETTINGS_SUPPORT_TEXTLONG2 =           "Пожалуйста, рассмотрите возможность финансовой поддержки разработчика."
-L.SETTINGS_SUPPORT_TEXT =                "Поддержка"
-L.SETTINGS_SUPPORT_BUTTON =              "Buy Me a Coffee" -- Brand name, if there isn't a localised version, keep it the way it is
-L.SETTINGS_SUPPORT_DESC =                "Спасибо!"
-L.SETTINGS_HELP_TEXT =                   "Отзывы и помощь"
-L.SETTINGS_HELP_BUTTON =                 "Discord" -- Brand name, if there isn't a localised version, keep it the way it is
-L.SETTINGS_HELP_DESC =                   "Присоединяйтесь к Discord-серверу."
-L.SETTINGS_URL_COPY =                    "Нажмите Ctrl+C, чтобы скопировать:"
-L.SETTINGS_URL_COPIED =                  "Ссылка скопирована в буфер обмена"
+L.VERSION =                              GAME_VERSION_LABEL .. ":" -- "Version"
+L.SUPPORT_TEXTLONG1 =                    "Разработка этого аддона требует значительного времени и усилий."
+L.SUPPORT_TEXTLONG2 =                    "Пожалуйста, рассмотрите возможность финансовой поддержки разработчика."
+L.SUPPORT =                              "Поддержка"
+L.BUY_ME_A_COFFEE =                      "Buy Me a Coffee" -- Brand name, if there isn't a localised version, keep it the way it is
+L.THANK_YOU =                            "Спасибо!"
+L.FEEDBACK_AND_HELP =                    "Отзывы и помощь"
+L.DISCORD =                              "Discord" -- Brand name, if there isn't a localised version, keep it the way it is
+L.JOIN_DISCORD_SERVER =                  "Присоединяйтесь к Discord-серверу."
+L.CTRL_C_COPY =                          "Нажмите Ctrl+C, чтобы скопировать:"
+L.LINK_COPIED =                          "Ссылка скопирована в буфер обмена"
 
-L.SETTINGS_KEYSLASH_TITLE =              SETTINGS_KEYBINDINGS_LABEL .. " и слэш-команды" -- "Keybindings"
+L.KEYBINDINGS_AND_SLASH_COMMANDS =       SETTINGS_KEYBINDINGS_LABEL .. " и слэш-команды" -- "Keybindings"
 _G["BINDING_NAME_SAD_TOGGLELIST"] =      app.NameShort .. ": Открыть/закрыть список аддона"
-L.SLASH_OPEN_LIST =                      "Открыть/закрыть список аддона"
-L.SLASH_OPEN_SETTINGS =                  "Открыть настройки"
--- L.SLASH_NAME_OR_NUMBER =                 "name or number"
--- L.SLASH_LOAD_PROFILE =                   "Ask to reload and activate the addon profile"
--- L.SLASH_FORCELOAD_PROFILE =              "Directly reload and activate the addon profile"
+L.TOGGLE_ADDON_LIST =                    "Открыть/закрыть список аддона"
+L.OPEN_SETTINGS =                        "Открыть настройки"
+-- L.NAME_OR_NUMBER =                       "name or number"
+-- L.LOAD_PROFILE =                         "Ask to reload and activate the addon profile"
+-- L.FORCELOAD_PROFILE =                    "Directly reload and activate the addon profile"
 
 L.GENERAL =                              GENERAL -- "General"
 L.SHOW_MINIMAP_ICON =                    "Показывать иконку у миникарты"

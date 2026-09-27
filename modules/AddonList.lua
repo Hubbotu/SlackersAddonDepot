@@ -64,7 +64,7 @@ function app:CreateAddonList()
 	app.AddonListFrame.SettingsButton:SetScript("OnEnter", function(self)
 		GameTooltip:ClearLines()
 		GameTooltip:SetOwner(self)
-		GameTooltip:AddLine(L.SLASH_OPEN_SETTINGS)
+		GameTooltip:AddLine(L.OPEN_SETTINGS)
 		GameTooltip:Show()
 	end)
 	app.AddonListFrame.SettingsButton:SetScript("OnLeave", function()
@@ -230,7 +230,7 @@ function app:CreateAddonList()
 	local function profilesGenerator(owner, rootDescription)
 		local function makeProfileEntry(profileNo, profileInfo)
 			local profileColor = ""
-			if profileInfo.enabled == false then profileColor = "|cff9d9d9d" end
+			if profileInfo.enabled == false then profileColor = "|cff9D9D9D" end
 			local profile = rootDescription:CreateButton(profileColor .. profileInfo.name)
 			if profileInfo.type == "Login" then
 				profile:CreateButton("Set load conditions", function()
@@ -578,14 +578,14 @@ function app:CreateAddonList()
 		if #login > 0 then
 			tooltipText = tooltipText .. L.LOGIN_PROFILES
 			for _, profile in ipairs(login) do
-				tooltipText = tooltipText .. "\n|cffFFFFFF" .. profile .. "|R"
+				tooltipText = tooltipText .. "\n|cffFFFFFF" .. profile .. "|r"
 			end
 		end
 		if #standard > 0 then
 			if #login > 0 then tooltipText = tooltipText .. "\n\n" end
 			tooltipText = tooltipText .. L.STANDARD_PROFILES
 			for _, profile in ipairs(standard) do
-				tooltipText = tooltipText .. "\n|cffFFFFFF" .. profile .. "|R"
+				tooltipText = tooltipText .. "\n|cffFFFFFF" .. profile .. "|r"
 			end
 		end
 		listItem.ProfileButton:SetScript("OnEnter", function()
