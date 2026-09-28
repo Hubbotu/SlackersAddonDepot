@@ -37,15 +37,9 @@ function app:CreateAddonList()
 	app.AddonListFrame:SetClampRectInsets(app.AddonListFrame:GetWidth()-inset, -(app.AddonListFrame:GetWidth()-inset), -(app.AddonListFrame:GetHeight()-inset), app.AddonListFrame:GetHeight()-inset)
 	app.AddonListFrame:Hide()
 	table.insert(UISpecialFrames, "SlackersAddonDepotAddonList")
-	app.AddonListFrame:SetScript("OnMouseDown", function()
-		app.AddonListFrame:SetToplevel(true)
-	end)
-	app.AddonListFrame:SetScript("OnDragStart", function()
-		app.AddonListFrame:StartMoving()
-	end)
-	app.AddonListFrame:SetScript("OnDragStop", function()
-		app.AddonListFrame:StopMovingOrSizing()
-	end)
+	app.AddonListFrame:SetScript("OnMouseDown", function() app.AddonListFrame:SetToplevel(true) end)
+	app.AddonListFrame:SetScript("OnDragStart", function() app:StartMoving() end)
+	app.AddonListFrame:SetScript("OnDragStop", function()	app:StopMoving() end)
 
 	app.AddonListFrame.TitleContainer.TitleText:SetText(app.NameLong)
 	app.AddonListFrame.CloseButton = CreateFrame("Button", nil, app.AddonListFrame, "UIPanelCloseButtonDefaultAnchors")
@@ -431,8 +425,8 @@ function app:CreateAddonList()
 	scrollBox:SetPoint("BOTTOMRIGHT", app.AddonListFrame.List, -18, 4)
 	scrollBox:EnableMouse(true)
 	scrollBox:RegisterForDrag("LeftButton")
-	scrollBox:SetScript("OnDragStart", function() app.AddonListFrame:StartMoving() end)
-	scrollBox:SetScript("OnDragStop", function() app.AddonListFrame:StopMovingOrSizing() end)
+	scrollBox:SetScript("OnDragStart", function() app:StartMoving() end)
+	scrollBox:SetScript("OnDragStop", function() app:StopMoving() end)
 
 	local scrollBar = CreateFrame("EventFrame", nil, app.AddonListFrame.List, "MinimalScrollBar")
 	scrollBar:SetPoint("TOPLEFT", scrollBox, "TOPRIGHT")
@@ -444,8 +438,8 @@ function app:CreateAddonList()
 	local function headerInitializer(listItem, node)
 		listItem:EnableMouse(true)
 		listItem:RegisterForDrag("LeftButton")
-		listItem:SetScript("OnDragStart", function() app.AddonListFrame:StartMoving() end)
-		listItem:SetScript("OnDragStop", function() app.AddonListFrame:StopMovingOrSizing() end)
+		listItem:SetScript("OnDragStart", function() app:StartMoving() end)
+		listItem:SetScript("OnDragStop", function() app:StopMoving() end)
 
 		local data = node:GetData()
 		local function updateToggleButton()
@@ -489,8 +483,8 @@ function app:CreateAddonList()
 	local function addonInitializer(listItem, node)
 		listItem:EnableMouse(true)
 		listItem:RegisterForDrag("LeftButton")
-		listItem:SetScript("OnDragStart", function() app.AddonListFrame:StartMoving() end)
-		listItem:SetScript("OnDragStop", function() app.AddonListFrame:StopMovingOrSizing() end)
+		listItem:SetScript("OnDragStart", function() app:StartMoving() end)
+		listItem:SetScript("OnDragStop", function() app:StopMoving() end)
 
 		local data = node:GetData()
 
@@ -672,6 +666,7 @@ function app:CreateAddonList()
 	app.AddonListFrame:SetScript("OnShow", function()
 		app.AddonListFrame:ClearAllPoints()
 		app.AddonListFrame:SetPoint("CENTER")
+		C_Timer.After(1, function() app.Gravity:StartGravity(app.AddonListFrame) end)
 
 		app.Flag.SelectedCharacter = app.Info.GUID
 		local displayName
@@ -719,6 +714,16 @@ function app:CreateAddonList()
 			app:UpdateAddonList()
 		end,
 	}
+end
+
+function app:StartMoving()
+	app.AddonListFrame:StartMoving()
+	app.Gravity:StartDragging(app.AddonListFrame)
+end
+
+function app:StopMoving()
+	app.AddonListFrame:StopMovingOrSizing()
+	app.Gravity:StopDragging(app.AddonListFrame)
 end
 
 function app:UpdateAddonList()
