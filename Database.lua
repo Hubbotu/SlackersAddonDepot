@@ -37,21 +37,21 @@ app.Classes = {
 }
 
 app.Professions = {
-	{ tradeSkillLineID = 171, retailIcon = CreateSimpleTextureMarkup(4620669), foreverIcon = CreateSimpleTextureMarkup(136240) }, -- Alchemy
-	{ tradeSkillLineID = 164, retailIcon = CreateSimpleTextureMarkup(4620670), foreverIcon = CreateSimpleTextureMarkup(136241) }, -- Blacksmithing
-	{ tradeSkillLineID = 333, retailIcon = CreateSimpleTextureMarkup(4620672), foreverIcon = CreateSimpleTextureMarkup(136244) }, -- Enchanting
-	{ tradeSkillLineID = 202, retailIcon = CreateSimpleTextureMarkup(4620673), foreverIcon = CreateSimpleTextureMarkup(136243) }, -- Engineering
-	{ tradeSkillLineID = 773, retailIcon = CreateSimpleTextureMarkup(4620676) }, -- Inscription
-	{ tradeSkillLineID = 755, retailIcon = CreateSimpleTextureMarkup(4620677) }, -- Jewelcrafting
-	{ tradeSkillLineID = 165, retailIcon = CreateSimpleTextureMarkup(4620678), foreverIcon = CreateSimpleTextureMarkup(136247) }, -- Leatherworking
-	{ tradeSkillLineID = 197, retailIcon = CreateSimpleTextureMarkup(4620681), foreverIcon = CreateSimpleTextureMarkup(136249) }, -- Tailoring
-	{ tradeSkillLineID = 182, retailIcon = CreateSimpleTextureMarkup(4620675), foreverIcon = CreateSimpleTextureMarkup(136065) }, -- Herbalism
-	{ tradeSkillLineID = 186, retailIcon = CreateSimpleTextureMarkup(4620679), foreverIcon = CreateSimpleTextureMarkup(136248) }, -- Mining
-	{ tradeSkillLineID = 393, retailIcon = CreateSimpleTextureMarkup(4620680), foreverIcon = CreateSimpleTextureMarkup(134366) }, -- Skinning
-	{ tradeSkillLineID = 185, retailIcon = CreateSimpleTextureMarkup(4620671), foreverIcon = CreateSimpleTextureMarkup(133971) }, -- Cooking
-	{ tradeSkillLineID = 356, retailIcon = CreateSimpleTextureMarkup(4620674), foreverIcon = CreateSimpleTextureMarkup(136245) }, -- Fishing
-	{ tradeSkillLineID = 794, retailIcon = CreateSimpleTextureMarkup(441139) }, -- Archaeology
-	{ tradeSkillLineID = 129, foreverIcon = CreateSimpleTextureMarkup(135966) }, -- First Aid
+	{ tradeSkillLineID = 171, retailIcon = 4620669, foreverIcon = 136240 }, -- Alchemy
+	{ tradeSkillLineID = 164, retailIcon = 4620670, foreverIcon = 136241 }, -- Blacksmithing
+	{ tradeSkillLineID = 333, retailIcon = 4620672, foreverIcon = 136244 }, -- Enchanting
+	{ tradeSkillLineID = 202, retailIcon = 4620673, foreverIcon = 136243 }, -- Engineering
+	{ tradeSkillLineID = 773, retailIcon = 4620676 }, -- Inscription
+	{ tradeSkillLineID = 755, retailIcon = 4620677 }, -- Jewelcrafting
+	{ tradeSkillLineID = 165, retailIcon = 4620678, foreverIcon = 136247 }, -- Leatherworking
+	{ tradeSkillLineID = 197, retailIcon = 4620681, foreverIcon = 136249 }, -- Tailoring
+	{ tradeSkillLineID = 182, retailIcon = 4620675, foreverIcon = 136065 }, -- Herbalism
+	{ tradeSkillLineID = 186, retailIcon = 4620679, foreverIcon = 136248 }, -- Mining
+	{ tradeSkillLineID = 393, retailIcon = 4620680, foreverIcon = 134366 }, -- Skinning
+	{ tradeSkillLineID = 185, retailIcon = 4620671, foreverIcon = 133971 }, -- Cooking
+	{ tradeSkillLineID = 356, retailIcon = 4620674, foreverIcon = 136245 }, -- Fishing
+	{ tradeSkillLineID = 794, retailIcon = 441139 }, -- Archaeology
+	{ tradeSkillLineID = 129, foreverIcon = 135966 }, -- First Aid
 }
 
 app.Enum = {

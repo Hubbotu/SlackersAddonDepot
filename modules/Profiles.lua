@@ -504,7 +504,7 @@ function app:CreateLoadConditionsPanel()
 						for _, profession in ipairs(app.Professions) do
 							local icon = (app.Retail and profession.retailIcon) or (app.Forever and profession.foreverIcon)
 							if icon then
-								rootDescription:CreateCheckbox(icon .. " " .. C_TradeSkillUI.GetProfessionInfoBySkillLineID(profession.tradeSkillLineID).professionName, isSelected, setSelected, profession.tradeSkillLineID)
+								rootDescription:CreateCheckbox(CreateSimpleTextureMarkup(icon) .. " " .. C_TradeSkillUI.GetProfessionInfoBySkillLineID(profession.tradeSkillLineID).professionName, isSelected, setSelected, profession.tradeSkillLineID)
 							end
 						end
 					elseif app.Data.Profiles[app.Flag.SelectedProfile].loadConditions[data.id].condition == app.Enum.Condition.Class then
