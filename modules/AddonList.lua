@@ -227,7 +227,7 @@ function app:CreateAddonList()
 			if profileInfo.enabled == false then profileColor = "|cff9D9D9D" end
 			local profile = rootDescription:CreateButton(profileColor .. profileInfo.name)
 			if profileInfo.type == "Login" then
-				profile:CreateButton("Set load conditions", function()
+				profile:CreateButton(L.SET_LOAD_CONDITIONS, function()
 					app.Flag.SelectedProfile = profileNo
 					app.LoadConditionsPanel:Show()
 				end)

@@ -92,6 +92,7 @@ L.STANDARD_PROFILES =                    "Standard Profiles"
 L.STANDARD_PROFILE_DESC1 =               "Enables addons in-game."
 L.STANDARD_PROFILE_DESC2 =               "Manually applied to specific characters. Apply one profile at a time."
 
+L.SET_LOAD_CONDITIONS =                  "Set load conditions"
 L.APPLY_PROFILE =                        "Apply profile to %s" -- %s becomes a character name
 L.ADDONS =                               "Addons"
 L.SAVE_ADDONS =                          "Save %d addons" -- %d becomes a number

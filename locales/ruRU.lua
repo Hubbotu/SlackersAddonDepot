@@ -92,6 +92,7 @@ L.STANDARD_PROFILES =                    "Стандартные профили"
 L.STANDARD_PROFILE_DESC1 =               "Включает аддоны во время игры."
 L.STANDARD_PROFILE_DESC2 =               "Применяется вручную к конкретным персонажам. Можно применить только один профиль за раз."
 
+-- L.SET_LOAD_CONDITIONS =                  "Set load conditions"
 L.APPLY_PROFILE =                        "Применить профиль к %s" -- %s becomes a character name
 L.ADDONS =                               "Аддоны"
 L.SAVE_ADDONS =                          "Сохранить %d аддонов" -- %d becomes a number
