@@ -734,7 +734,7 @@ function app:UpdateAddonList()
 
 		search = search:lower()
 
-		return not not (addon.title:lower():find(search, 1, true) or addon.name:lower():find(search, 1, true) or addon.author:lower():find(search, 1, true))
+		return not not (addon.title:lower():find(search, 1, true) or addon.title:lower():gsub("|cff%x%x%x%x%x%x", ""):gsub("|r", ""):find(search, 1, true) or addon.name:lower():find(search, 1, true) or addon.author:lower():find(search, 1, true))
 	end
 
 	if app.Data.Characters[app.Flag.SelectedCharacter] then
