@@ -1,6 +1,6 @@
----------------------------------------
--- Slacker's Addon Depot: AddonList.lua
----------------------------------------
+------------------------------------------
+-- Slacker's Addon Depot: AddonList.lua --
+------------------------------------------
 
 local appName, app = ...
 local api = app.api

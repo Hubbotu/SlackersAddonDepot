@@ -1,6 +1,6 @@
--------------------------------------
--- Slacker's Addon Depot: GetInfo.lua
--------------------------------------
+----------------------------------------
+-- Slacker's Addon Depot: GetInfo.lua --
+----------------------------------------
 
 local appName, app = ...
 local api = app.api

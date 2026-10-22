@@ -1,6 +1,6 @@
---------------------------------------
--- Slacker's Addon Depot: Profiles.lua
---------------------------------------
+-----------------------------------------
+-- Slacker's Addon Depot: Profiles.lua --
+-----------------------------------------
 
 local appName, app = ...
 local api = app.api
