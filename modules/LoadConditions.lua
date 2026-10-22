@@ -183,7 +183,7 @@ function app:ApplyProfile(profileNo, guid)
 end
 
 function app:ApplyLoadConditions(excludeCurrent)
-	if not app:ShouldApplyLoadConditions() then return end
+	if not app:ShouldApplyLoadConditions() or app.Flag.ApplyingOnLogout then return end
 
 	local function applyProfiles(targetGuid)
 		for i = 1, C_AddOns.GetNumAddOns() do
