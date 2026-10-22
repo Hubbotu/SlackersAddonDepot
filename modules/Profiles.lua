@@ -597,7 +597,7 @@ function api:LoadProfile(profileNameOrNo, force)
 		end
 	end
 
-	if not profileNo then
+	if not profileNo or not app.Data.Profiles[profileNo] then
 		app:Print(L.PROFILE_NOT_FOUND)
 	elseif not force then
 		StaticPopup_Show("SLACKERSADDONDEPOT_LOADPROFILE", nil, nil, profileNo)
