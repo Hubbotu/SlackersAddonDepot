@@ -131,7 +131,8 @@ L.SHOW_MINIMAP_ICON_DESC =               "Afficher le bouton de la mini-carte. S
 -- L.RULESET[1] =                           GDAPI_REALMTYPE_NORMAL -- "Normal"
 -- L.RULESET[2] =                           GDAPI_REALMTYPE_PVP -- "PvP"
 -- L.RULESET[3] =                           "Roleplay"
--- L.RULESET[4] =                           GUILD_PLAYSTYLE_HARDCORE -- "Hardcore"
+-- L.RULESET[4] =                           "Roleplay PvP"
+-- L.RULESET[5] =                           GUILD_PLAYSTYLE_HARDCORE -- "Hardcore"
 
 -- L.LOADCONDITION_WARNING1 =               "WARNING:" -- Uppercase
 -- L.LOADCONDITION_WARNING2 =               "Addons that are not in any matching Login Profiles will be disabled on login."

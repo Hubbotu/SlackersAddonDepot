@@ -516,7 +516,7 @@ function app:CreateLoadConditionsPanel()
 							end
 						end
 					elseif app.Data.Profiles[app.Flag.SelectedProfile].loadConditions[data.id].condition == app.Enum.Condition.Ruleset then
-						for i = 1, 4 do
+						for i = 1, #L.RULESET do
 							rootDescription:CreateCheckbox(L.RULESET[i], isSelected, setSelected, i)
 						end
 					end

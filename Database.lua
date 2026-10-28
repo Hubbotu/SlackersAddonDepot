@@ -82,7 +82,8 @@ app.Enum = {
 		Normal = 1,
 		PvP = 2,
 		Roleplay = 3,
-		Hardcore = 4,
+		PvPRoleplay = 4,
+		Hardcore = 5,
 	}
 }
 app.ValidStates = {

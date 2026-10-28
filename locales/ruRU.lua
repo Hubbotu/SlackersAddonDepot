@@ -131,7 +131,8 @@ L.RULESET = {}
 L.RULESET[1] =                           GDAPI_REALMTYPE_NORMAL -- "Normal"
 L.RULESET[2] =                           GDAPI_REALMTYPE_PVP -- "PvP"
 L.RULESET[3] =                           "Ролевой"
-L.RULESET[4] =                           GUILD_PLAYSTYLE_HARDCORE -- "Hardcore"
+-- L.RULESET[4] =                           "Roleplay PvP"
+L.RULESET[5] =                           GUILD_PLAYSTYLE_HARDCORE -- "Hardcore"
 
 L.LOADCONDITION_WARNING1 =               "ВНИМАНИЕ:" -- Uppercase
 L.LOADCONDITION_WARNING2 =               "Аддоны, не входящие ни в один из подходящих профилей при входе, будут отключены при входе в игру."

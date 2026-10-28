@@ -86,6 +86,8 @@ function app:GetCharacterInfo()
 	if app.Forever then
 		if C_GameRules.IsGameRuleActive(Enum.GameRule.HardcoreRuleset) then
 			ruleset = app.Enum.Ruleset.Hardcore
+		elseif C_GameRules.IsGameRuleActive(Enum.GameRule.RPRuleset) and C_GameRules.IsGameRuleActive(Enum.GameRule.PvPRuleset) then
+			ruleset = app.Enum.Ruleset.PvPRoleplay
 		elseif C_GameRules.IsGameRuleActive(Enum.GameRule.RPRuleset) then
 			ruleset = app.Enum.Ruleset.Roleplay
 		elseif C_GameRules.IsGameRuleActive(Enum.GameRule.PvPRuleset) then
